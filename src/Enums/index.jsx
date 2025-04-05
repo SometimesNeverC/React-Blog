@@ -1,35 +1,34 @@
 
-export const Enums=[
+export const Tabs=[
   {
     id:1,
     text:'Home',
-    href:'home'
-
+    link:'/'
   },
   {
     id:2,
     text:'About',
-    href:'about'
+    link:'/about'
   },
   {
     id:3,
     text:'Contact',
-    href:'contact'
+    link:'/contact'
   },
   {
     id:4,
     text:'Blog',
-    href:'blog'
+    link:'/blog'
   },
   {
     id:5,
-    text:'Login',
-    href:'login'
+    text:'Article',
+    link:'/article'
   },
   {
     id:6,
     text:'Testimonials',
-    href:'testimonials'
+    link:'/testimonials'
   }
 
 ]

@@ -1,11 +1,17 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const NavLinks = ({href, text,setToggle}) => {
+const NavLinks = ({LinkClick, id, text, setToggle,FatherId }) => {
+  
   return (
-    <div onClick={prev=>setToggle(!prev)}>
-      <a href={`${href}`} className='font-size:20px;line-height:28px;'>
+    <div onClick={prev => setToggle(!prev)}>
+      <span
+        key={id}
+        className={classNames('navigation_tabbar', { active: FatherId === id })}
+        onClick={() => LinkClick(id)}
+      >
         {text}
-      </a>
+      </span>
     </div>
   )
 }

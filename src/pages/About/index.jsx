@@ -2,7 +2,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <div>index</div>
+    <div>About页面</div>
   )
 }
 
