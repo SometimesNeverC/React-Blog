@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './index.css'
 import { useNavigate } from 'react-router-dom'
+import './index.css'
 import MiKu from '../../assets/3.jpg'
 
 const Home = () => {

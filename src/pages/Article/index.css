@@ -1,0 +1,52 @@
+/* base */
+.Article_page {
+  margin: auto;
+  width: 60%;
+  height:100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter:blur(10px);
+  border-radius: 20px;
+
+}
+
+.Article_page_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex:1;
+}
+
+.scroll_container{
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0);
+
+  /* Chrome/Safari/Edge */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+@media(min-width: 768px){
+  .Article_page{
+    margin: 32px auto;
+  }
+  .scroll_container {
+    max-height: 300px;
+  }
+}
+
+
+

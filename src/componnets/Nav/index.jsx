@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import classNames from 'classnames'
 import './index.css'
 import { Tabs } from '../../enums'
 import NavLinks from '../../componnets/Link/NavLinks'
-import { useNavigate } from 'react-router-dom'
-import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion';
-import classNames from 'classnames'
 
 const Portait = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,7 +13,7 @@ const Portait = () => {
   const navigate = useNavigate();
 
   const MenuClick = (id) => {
-    console.log(id);
+    // console.log(id);
     setId(id)
     if (id != undefined) {
       const navigateTo = Tabs.filter(item => item.id === id)

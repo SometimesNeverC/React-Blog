@@ -1,8 +1,8 @@
-import Home from '../pages/Home/index.jsx'
-import About from '../pages/About/index.jsx'
-import Blog from '../pages/Blog/index.jsx'
-import Article from '../pages/Article/index.jsx'
-import NotFound from '../pages/NotFound/index.jsx'
+import Home from '../pages/Home/'
+import About from '../pages/About/'
+import Blog from '../pages/Blog/'
+import Article from '../pages/Article/'
+import NotFound from '../pages/NotFound/'
 import { createBrowserRouter,createHashRouter } from 'react-router-dom'
 
 

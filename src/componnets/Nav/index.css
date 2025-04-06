@@ -1,3 +1,4 @@
+/* base */
 .navigation{
   position:relative;
   top:0;
@@ -16,25 +17,8 @@
 
   padding: 16px 8px;    
 }
-.navigation_tabbar{
-  font-weight: 500;
-  color: #4fd8bd;
-  text-decoration: inherit;
-  transition:all 0.3s ease;
-}
-.navigation_tabbar:hover{
-  color: white;
-  box-shadow: 0 0 20px #4fd8bd;
-  border-radius: 20px;
-  padding:5px;
-  transform: scale(1.05);
-}
 
-.active{
-  color:rgb(238, 103, 114);
-  font-weight:500;
-  /* border-bottom:1px solid #646cff; */
-}
+
 
 .head-container{
   display: flex;
@@ -70,6 +54,28 @@
     display: flex;
   }
 }
+
+/* tabbars */
+.navigation_tabbar{
+  font-weight: 500;
+  color: #4fd8bd;
+  text-decoration: inherit;
+  transition:all 0.3s ease;
+}
+.navigation_tabbar:hover{
+  color: white;
+  box-shadow: 0 0 20px #4fd8bd;
+  border-radius: 20px;
+  padding:5px;
+  transform: scale(1.05);
+}
+
+.active{
+  color:rgb(238, 103, 114);
+  font-weight:500;
+  /* border-bottom:1px solid #646cff; */
+}
+
 .toggle{
   cursor: pointer;
   font-size: 30px;
