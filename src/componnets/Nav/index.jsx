@@ -57,7 +57,7 @@ const Portait = () => {
               return <NavLinks
                 key={item.id}
                 {...item}
-                FatherId = {Id}
+                FatherId={Id}
                 LinkClick={MenuClick}
                 setToggle={setToggle} />
             })}

@@ -1,8 +1,8 @@
 import React from 'react'
 import classNames from 'classnames'
 
-const NavLinks = ({LinkClick, id, text, setToggle,FatherId }) => {
-  
+const NavLinks = ({ LinkClick, id, text, setToggle, FatherId }) => {
+
   return (
     <div onClick={prev => setToggle(!prev)}>
       <span

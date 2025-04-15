@@ -19,13 +19,14 @@
   border-radius: 50%; 
   overflow: hidden;                                 
   border: 2px solid ghostwhite;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease;/* 添加过渡动画更平滑 */
 }
 .Home_page_img_container:hover{
   width: 200px;
   height: 200px;
   box-shadow: 0 10px 25px rgba(239, 106, 214, 0.971);
   transform: scale(1.05) translateY(-5px);
+  /* scale(1.05)将元素放大5% translateY(-5px)将元素向上移动5像素*/
 }
 .img{
   width: 100%;
@@ -71,9 +72,19 @@
     animation:animate infinite 20s linear;
   }
 }
+
+.card {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: flex-end;
+  position:fixed;
+  bottom:120px;
+}
+
 /* button */
 .Home_button {
-  position:fixed;
+
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -82,8 +93,6 @@
   font-family: inherit;
   background-color: rgb(11,13,10);
   cursor: pointer;
-  transition: border-color 0.25s;
-  bottom:120px;
   transition: all 0.3s ease;
 }
 .Home_button:hover {

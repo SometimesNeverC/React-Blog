@@ -3,6 +3,7 @@ import About from '../pages/About/'
 import Blog from '../pages/Blog/'
 import Article from '../pages/Article/'
 import NotFound from '../pages/NotFound/'
+import Loading from '../pages/Loading'
 import { createBrowserRouter,createHashRouter } from 'react-router-dom'
 
 
@@ -36,6 +37,10 @@ const routes = ([
   {
     path:'/testimonials',
     element: <></>
+  },
+  {
+    path:'/loading',
+    element:<Loading />
   },
   {
     path:'*',
