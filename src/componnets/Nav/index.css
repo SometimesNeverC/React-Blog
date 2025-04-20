@@ -64,14 +64,12 @@
   color: #4fd8bd;
   text-decoration: inherit;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .navigation_tabbar:hover {
   color: white;
-  box-shadow: 0 0 20px #4fd8bd;
-  border-radius: 20px;
-  padding: 5px;
-  transform: scale(1.05);
+  transform: scale(1.05)  translateY(-3px);
 }
 
 .active {
@@ -131,5 +129,15 @@
   top: 32px;
   font-size: 30px;
   cursor: pointer;
+}
+
+@media(max-width:768px){
+  .navigation_tabbar:hover {
+    color: white;
+    box-shadow:0 0 20px #4fd8bd;
+    border-radius: 20px;
+    padding: 5px;
+    transform: scale(1.05);
+  }
 }
 
